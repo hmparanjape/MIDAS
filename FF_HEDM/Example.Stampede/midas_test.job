@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#SBATCH -J SSMIDAS          # Job name
+#SBATCH -o SSMIDAS.%j.out   # stdout; %j expands to jobid
+#SBATCH -e SSMIDAS.%j.err   # stderr; skip to combine stdout and stderr
+#SBATCH -p largemem         # queue
+#SBATCH -N 1                # Number of nodes, not cores (16 cores/node)
+#SBATCH -n 32               # Total number of MPI tasks (if omitted, n=N)
+#SBATCH -t 01:00:00         # max time
+
+module load netcdf/4.3.3.1
+~/.MIDAS/MIDAS_V3_FarFieldLayers parameters_midas_test.txt 1 1 32
