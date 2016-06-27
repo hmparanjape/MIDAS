@@ -25,7 +25,7 @@ orthros: deps netcdf all
 stampede: deps help bindircheck calibrant fittiltbclsdsample fitposorstrains peaksfittingstampede \
         mergeoverlaps calcradius findsaturatedpx\
         mergerings fittiltx fitwedge hkls indexer bindata processgrains graintracking
-        Stampede/setup.sh
+	Stampede/setup.sh
 deps:
 	Orthros/GetPackages.sh
 
