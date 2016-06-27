@@ -70,7 +70,7 @@ peaksfitting: $(SRCDIR)PeaksFittingPerFile.c
 	$(CC) $(SRCDIR)PeaksFittingPerFile.c -o $(BINDIR)PeaksFittingPerFile $(CFLAGSNETCDF) $(CFLAGS) $(CFLAGSNLOPT) 
 
 peaksfittingstampede: $(SRCDIR)PeaksFittingPerFile.c
-        $(CC) $(SRCDIR)PeaksFittingPerFile.c -o $(BINDIR)PeaksFittingPerFile $(CFLAGSNETCDFSTAMPEDE) $(CFLAGS) $(CFLAGSNLOPT) 
+	$(CC) $(SRCDIR)PeaksFittingPerFile.c -o $(BINDIR)PeaksFittingPerFile $(CFLAGSNETCDFSTAMPEDE) $(CFLAGS) $(CFLAGSNLOPT) 
 
 mergeoverlaps: $(SRCDIR)MergeOverlappingPeaks.c
 	$(CC) $(SRCDIR)MergeOverlappingPeaks.c -o $(BINDIR)MergeOverlappingPeaks $(CFLAGS)
